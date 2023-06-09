@@ -25,7 +25,7 @@ const char compile_date[] = __DATE__ " " __TIME__;
 # define ZIMODEM_ESP32
 #elif defined(ESP32)
 # define ZIMODEM_ESP32
-#elif defined(ARDUINO_ESP320)
+#elif defined(ARDUINO_ESP32)
 # define ZIMODEM_ESP32
 #elif defined(ARDUINO_NANO32)
 # define ZIMODEM_ESP32
@@ -49,7 +49,7 @@ const char compile_date[] = __DATE__ " " __TIME__;
 #   define DEFAULT_PIN_HS 15
 #   define DEFAULT_PIN_WIFI 0
 # endif
-# define DEFAULT_HS_BAUD 115200
+# define DEFAULT_HS_BAUD 57600
 # define DEFAULT_AA_ACTIVE LOW
 # define DEFAULT_AA_INACTIVE HIGH
 # define DEFAULT_HS_ACTIVE LOW
@@ -133,7 +133,7 @@ const char compile_date[] = __DATE__ " " __TIME__;
 # define DEFAULT_DTR_LOW  HIGH
 #endif
 
-#define DEFAULT_BAUD_RATE 115200
+#define DEFAULT_BAUD_RATE 57600
 #define DEFAULT_SERIAL_CONFIG SERIAL_8N1
 #define MAX_PIN_NO 50
 #define INTERNAL_FLOW_CONTROL_DIV 380
